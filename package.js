@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A reactive table designed for Meteor",
- version: "1.0.1",
+ version: "1.0.2",
   name: "huayi:reactive-table",
   git: "https://github.com/fox2017/reactive-table.git"
 });
