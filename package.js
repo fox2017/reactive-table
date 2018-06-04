@@ -1,4 +1,5 @@
 Package.describe({
+<<<<<<< HEAD
   summary: "A reactive table designed for Meteor fix to use Collection server publish by Aggregate",
  version: "1.0.0",
   name: "huayi:reactive-table",
@@ -80,4 +81,28 @@ Package.on_test(function (api) {
 
     api.use("dburles:collection-helpers@1.0.1", "client");
     api.add_files("test/test_compatibility.js", "client");
+=======
+  name: 'huayi:reactive-table',
+  version: '0.0.1',
+  // Brief, one-line summary of the package.
+  summary: '',
+  // URL to the Git repository containing the source code for this package.
+  git: '',
+  // By default, Meteor will default to using README.md for documentation.
+  // To avoid submitting documentation, set this field to null.
+  documentation: 'README.md'
+});
+
+Package.onUse(function(api) {
+  api.versionsFrom('1.6.1.1');
+  api.use('ecmascript');
+  api.mainModule('reactive-table.js');
+});
+
+Package.onTest(function(api) {
+  api.use('ecmascript');
+  api.use('tinytest');
+  api.use('huayi:reactive-table');
+  api.mainModule('reactive-table-tests.js');
+>>>>>>> 53c755dac5e84a5fee4a8c2896c8ceab83a015fb
 });
