@@ -30,7 +30,7 @@ Fix to use Collection server publish by Aggregate,Thanks for Aslagle.
   - [Nested Tables](#nested-tables)
 - [Internationalization](#internationalization)
 
-##Fix: Add Server publish by Aggregate
+## Fix: Add Server publish by Aggregate
 
 ex
 
