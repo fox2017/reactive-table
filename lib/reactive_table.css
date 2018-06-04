@@ -39,7 +39,10 @@
 .reactive-table-navigation .rows-per-page {
     float: left;
 }
-
+.reactive-table-navigation .page-info {
+    float: left;
+    margin:20px;
+}
 .reactive-table-navigation .page-number {
     float: right;
 }

@@ -1,6 +1,6 @@
 # Reactive Table
 A reactive table for Meteor, using [Blaze](https://github.com/meteor/blaze).
-
+Fix to use Collection server publish by Aggregate,Thanks for Aslagle.
 
 ### Table of Contents
 - [Quick Start](#quick-start)
@@ -30,6 +30,21 @@ A reactive table for Meteor, using [Blaze](https://github.com/meteor/blaze).
   - [Nested Tables](#nested-tables)
 - [Internationalization](#internationalization)
 
+##Fix: Add Server publish by Aggregate
+
+ex
+
+    ReactiveTable.publishAggregate(
+                                    name,
+                                    pipOrFunction,
+                                    collectionOrFunction, 
+                                    selectorOrFunction, 
+                                    settings,
+                                    option
+                                   );
+* `collectionOrFunction`:  Mongo collection or function  call [filters](#custom-filters) return a Mongo collection or Cursor.
+* `pipOrFunction`:  pipLine Array or function call by [filters](#custom-filters) arguments ,return a pip Array.
+    
 ## Quick Start
 
 Install reactive table:
